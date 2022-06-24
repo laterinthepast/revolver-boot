@@ -18,6 +18,12 @@ a {
   height: 100vh;
 }
 
+@media (max-width: 768px) {
+  .landing p {
+    font-size: 1rem !important;
+  }
+}
+
 .img-music {
   max-width: 100%;
 }
