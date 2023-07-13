@@ -1,37 +1,70 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
 html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  
+  font-family: 'Poppins', sans-serif;
 }
 a {
   text-decoration: none;
 }
-
+.welcome-msg {
+  padding-top: 18% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-text {
+  width: 70% !important;
+}
 .landing {
 
- background-image: url('./files/9.jpg');
+ background-image: url('/files/images/back/1.png');
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   height: 100vh;
   @media (max-width:768px){
+    background-image: url('/files/images/back/1m.png');
     p {
       font-size: 1rem !important;
     }
   }
 }
-
+.about {
+  background-image: url('/files/images/back/2.png');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+  @media (max-width:768px){
+    background-image: url('/files/images/back/2m.png');
+  }
+}
+.gear {
+  background-image: url('/files/images/back/3.png');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 40vh;
+  @media (max-width:768px){
+    background-image: url('/files/images/back/3m.png');
+  }
+}
+.about-text {
+  padding-top: 10%;
+  p {
+    background-color: rgba(0, 0, 0, 0.432);
+    padding: 20px;
+    border-radius: 15px;
+  }
+}
 .img-music {
-  max-width: 100%;
+  max-width: 20%;
 }
 
-/* .card {
-  border-radius: 20px;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
-  }
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-} */

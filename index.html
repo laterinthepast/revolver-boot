@@ -8,144 +8,544 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./styles.css">
-    <title>Revolver backline !</title>
+    <title>Revolver backline - wypożyczalnia sprzętu</title>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light text-dark bg-danger">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link " href="#">About</a>
+                        <a class="nav-link fw-bold text-dark" href="#onas">O NAS</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Instruments
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="./pages/eguitars.html">eGuitars</a></li>
-                            <li><a class="dropdown-item" href="./pages/bguitars.html">Bass guitars</a></li>
-                            <li><a class="dropdown-item" href="./pages/drums.html">Drums</a></li>
-                            <li><a class="dropdown-item" href="./pages/other.html">Other</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-dark" href="#sprzet">SPRZĘT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-dark" href="#kontakt">KONTAKT</a>
                     </li>
                 </ul>
+                <a href="/" class="text-dark"><i class="bi bi-instagram"></i></a>
             </div>
         </div>
     </nav>
-    <section class="landing ">
-        <div class="container ">
+    <section class="landing">
+        <div class="container">
             <div class="content">
-                <div class="row d-flex flex-column justify-content-center align-items-center">
-                    <div class="col">
-                        <div class="display-3 pt-5 text-center fw-bolder">
+                <div class="">
+                    <div class="welcome-msg text-center">
+                        <div class="display-1 text-center fw-bolder">
                             Revolver Backline!
                         </div>
-                        <div class="text-white display-5 pb-5 text-center">
-                            Stage equipment rental
+                        <div class="text-white fw-bolder fs-5 text-center welcome-text">
+                            Wypożyczalnia sprzętu muzycznego, zestawy perkusyjne, gitarowe, didżejskie, basowe i wiele
+                            innych
                         </div>
                     </div>
-                    
-                        <div class="col-md d-flex flex-column justify-content-center align-items-center pt-5">
-                            <div class="">
-                                <p class=" text-center text-light bg-dark fs-4">
-                                    Revolver Backline Company specializes in the rental of professional music equipment,
-                                    like: instruments, amplifiers, drum sets and DJ sets, for all kinds of artistic
-                                    endeavors such as concerts, events, television programs and festivals in Poland and
-                                    abroad. <!-- We are driven by passion for music, we approach each project individually,
-                                    and
-                                    our people are professionals in every way. We offer comprehensive services,
-                                    including:
-                                    equipment, knowledge, experience, professional stagehands crew, and international
-                                    transport services. We guarantee competitive prices and the highest quality of
-                                    instruments, transport and customer service. Call today to check out our offer. -->
-                                </p>
-                            </div>
-                            <button type="button" class="btn btn-dark text-center>
-                                <a href="#contact" class="text-white fs-4">Contact us</a>
-                            </button>
-                        </div>
-                    
-
                 </div>
             </div>
-
     </section>
-    <div class="container d-flex justify-content-center">
+    <section class="about">
+        <div class="container">
+            <div class="content">
+                <div class="about-text text-white fs-4">
+                    <p id="onas">Firma Revolver Backline specjalizuje się w wypożyczaniu profesjonalnego sprzętu muzycznego,
+                        takiego jak: instrumenty, wzmacniacze, zestawy perkusyjne i didżejskie, na wszelkiego rodzaju
+                        przedsięwzięcia artystyczne, jak koncerty, eventy, programy telewizyjne oraz festiwale w Polsce
+                        i za granicą. Od początku naszej działalności kieruje nami pasja do muzyki, do każdego projektu
+                        podchodzimy indywidualnie, a nasi ludzie to profesjonaliści w każdym calu. Oferujemy kompleksowe
+                        usługi, obejmujące : sprzęt, wiedzę, doświadczenie, usługi profesjonalnej ekipy stagehands, oraz
+                        międzynarodowe usługi transportowe sprzętu muzycznego. Gwarantujemy konkurencyjne ceny i
+                        najwyższą jakość instrumentów, transportu, usługi, oraz obsługi klienta. Zadzwoń już dziś żeby
+                        sprawdzić nasza ofertę.</p>
+                </div>
+            </div>
+    </section>
+    <section class="gear">
+        <div class="container">
+            <div class="content d-flex flex-column justify-content-center align-items-center pt-5">
+                <div class="gear-title">
+                    <h3 class="display-2 fw-bold">SPRZĘT</h3>
+                </div>
+                <div class="modals pt-5 d-flex gap-2 flex-wrap">
+                    <div class="mod" id="sprzet">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalOne">
+                            akcesoria
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalOne" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="modalOneLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modalOneLabel">akcesoria</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Athletic Baritone Sax Stand</li>
+                                            <li>Athletic Double Bass Stand</li>
+                                            <li>Athletic Key X-Type stands with extensions</li>
+                                            <li>Athletic Tenor Sax Stand</li>
+                                            <li>Athletic Trombone stand</li>
+                                            <li>Athletic Trumpet Stand</li>
+                                            <li>Clearsonic Plexi Drumshield 5 Pieces</li>
+                                            <li>Hercules Adjustable Key Stool</li>
+                                            <li>Hercules Guitar stand</li>
+                                            <li>Hercules Piano Bench</li>
+                                            <li>K & M 4 Legs Key Stand with extension</li>
+                                            <li>K & M Laptop / Small mixer stand</li>
+                                            <li>K & M Music Stand Lights</li>
+                                            <li>Meinl Bar Stool</li>
+                                            <li>Ultracase Tech Box</li>
+                                            <li>Unnown Flight Case Guitar Stand - 5 Way</li>
+                                            <li>Unnown Flight Case Guitar Stand - 7 Way</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">zamknij</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTwo">
+                            z. perkusyjne
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalTwo" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="modalTwoLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modalTwoLabel">zestawy perkusyjne</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>DW Collectors - Champagne Glass Sparkle / 10,12,13,14,16,18,20,22</li>
+                                            <li>Gretsch GRETSCH USA '73 / 12,13,16,22</li>
+                                            <li>Gretsch USA Custom ( Natural Maple ) / 13,16,24</li>
+                                            <li>Ludwig Ludwig - Classic Maple - Red Sparkle / 10,12,13,14,16,16,18,22,26
+                                            </li>
+                                            <li>Ludwig Ludwig - VISTALITE Clear / 10,12,13,14,16,18,22,24</li>
+                                            <li>Mapex Orion</li>
+                                            <li>Pearl Master Custom Maple MMX</li>
+                                            <li>Premier Olympic</li>
+                                            <li>Sakae Trilogy</li>
+                                            <li>Tama Starclassic Bubinga Elite (Marigold Sparkle)</li>
+                                            <li>Yamaha Yamaha Maple Custom</li>
+                                            <li>Yamaha Recording Custom ( Cherry Red )</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">zamknij</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalThree">
+                            z. gitarowe
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalThree" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="modalThreeLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modalThreeLabel">zestawy gitarowe</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Ampeg V - 4</li>
+                                            <li>Marshall JCM 2000 TSL</li>
+                                            <li>Marshall JCM - 800</li>
+                                            <li>Marshall JCM-900 Hi Gain Dual Reverb</li>
+                                            <li>Mesa/Boogie MESA BOOGIE DUAL RECTIFIER (3 CHANNEL)</li>
+                                            <li>Mesa/Boogie Dual Rectifier</li>
+                                            <li>Mesa/Boogie Road King</li>
+                                            <li>Orange 40 Anniversary - Custom Shop - Maggie</li>
+                                            <li>Rivera Knucklehead 100</li>
+                                            <li>Shure Badger 30</li>
+
+                                            <li>Ampeg V - 4 / 4 x 12</li>
+                                            <li>Marshall JCM 900 DUMMY</li>
+                                            <li>Marshall 1960 A / 4 x 12</li>
+                                            <li>Marshall 1960 B / 4 x 12</li>
+                                            <li>Marshall MX 212 / 2 x 12</li>
+                                            <li>Mesa/Boogie Rectifier Guitar Cabinet 2 x 12 H</li>
+                                            <li>Mesa/Boogie Rectifier Standards Slant - 4 x 12</li>
+                                            <li>Orange PPC - 212 Cab / 2 x 12</li>
+                                            <li>Orange PPC - 412 Cab / 4 x 12</li>
+                                            <li>Rivera K 412 / 4 x 12</li>
+                                            <li>Vox AC - 30 212 Cab</li>
+                                            <li>AER Compact 60</li>
+                                            <li>Fender Bassman 410</li>
+                                            <li>Fender Hot Rod De Ville 212</li>
+                                            <li>Fender Hot Rod De Ville 410</li>
+                                            <li>Fender Twin Reverb - Silverface</li>
+                                            <li>Hiwatt Custom 50 / 212</li>
+                                            <li>Mesa/Boogie Mark IV</li>
+                                            <li>Roland Jazz Chorus 120</li>
+                                            <li>Vox VOX AC 30 6TB</li>
+                                            <li>Vox Ac - 30 6TB</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">zamknij</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalFour">
+                            z. didżejske
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalFour" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="modalFourLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modalFourLabel">zestawy didżejske</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Athletic Baritone Sax Stand</li>
+                                            <li>Athletic Double Bass Stand</li>
+                                            <li>Athletic Key X-Type stands with extensions</li>
+                                            <li>Athletic Tenor Sax Stand</li>
+                                            <li>Athletic Trombone stand</li>
+                                            <li>Athletic Trumpet Stand</li>
+                                            <li>Clearsonic Plexi Drumshield 5 Pieces</li>
+                                            <li>Hercules Adjustable Key Stool</li>
+                                            <li>Hercules Guitar stand</li>
+                                            <li>Hercules Piano Bench</li>
+                                            <li>K & M 4 Legs Key Stand with extension</li>
+                                            <li>K & M Laptop / Small mixer stand</li>
+                                            <li>K & M Music Stand Lights</li>
+                                            <li>Meinl Bar Stool</li>
+                                            <li>Ultracase Tech Box</li>
+                                            <li>Unnown Flight Case Guitar Stand - 5 Way</li>
+                                            <li>Unnown Flight Case Guitar Stand - 7 Way</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">zamknij</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalFive">
+                            z. basowe
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalFive" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="modalFiveLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modalFiveLabel">zestawy basowe</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Athletic Baritone Sax Stand</li>
+                                            <li>Athletic Double Bass Stand</li>
+                                            <li>Athletic Key X-Type stands with extensions</li>
+                                            <li>Athletic Tenor Sax Stand</li>
+                                            <li>Athletic Trombone stand</li>
+                                            <li>Athletic Trumpet Stand</li>
+                                            <li>Clearsonic Plexi Drumshield 5 Pieces</li>
+                                            <li>Hercules Adjustable Key Stool</li>
+                                            <li>Hercules Guitar stand</li>
+                                            <li>Hercules Piano Bench</li>
+                                            <li>K & M 4 Legs Key Stand with extension</li>
+                                            <li>K & M Laptop / Small mixer stand</li>
+                                            <li>K & M Music Stand Lights</li>
+                                            <li>Meinl Bar Stool</li>
+                                            <li>Ultracase Tech Box</li>
+                                            <li>Unnown Flight Case Guitar Stand - 5 Way</li>
+                                            <li>Unnown Flight Case Guitar Stand - 7 Way</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">zamknij</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSix">
+                            instrumenty
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalSix" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="modalSixLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modalSixLabel">instrumenty</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Athletic Baritone Sax Stand</li>
+                                            <li>Athletic Double Bass Stand</li>
+                                            <li>Athletic Key X-Type stands with extensions</li>
+                                            <li>Athletic Tenor Sax Stand</li>
+                                            <li>Athletic Trombone stand</li>
+                                            <li>Athletic Trumpet Stand</li>
+                                            <li>Clearsonic Plexi Drumshield 5 Pieces</li>
+                                            <li>Hercules Adjustable Key Stool</li>
+                                            <li>Hercules Guitar stand</li>
+                                            <li>Hercules Piano Bench</li>
+                                            <li>K & M 4 Legs Key Stand with extension</li>
+                                            <li>K & M Laptop / Small mixer stand</li>
+                                            <li>K & M Music Stand Lights</li>
+                                            <li>Meinl Bar Stool</li>
+                                            <li>Ultracase Tech Box</li>
+                                            <li>Unnown Flight Case Guitar Stand - 5 Way</li>
+                                            <li>Unnown Flight Case Guitar Stand - 7 Way</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">zamknij</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalSeven">
+                            werble
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalSeven" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="modalSevenLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modalSevenLabel">werble</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Athletic Baritone Sax Stand</li>
+                                            <li>Athletic Double Bass Stand</li>
+                                            <li>Athletic Key X-Type stands with extensions</li>
+                                            <li>Athletic Tenor Sax Stand</li>
+                                            <li>Athletic Trombone stand</li>
+                                            <li>Athletic Trumpet Stand</li>
+                                            <li>Clearsonic Plexi Drumshield 5 Pieces</li>
+                                            <li>Hercules Adjustable Key Stool</li>
+                                            <li>Hercules Guitar stand</li>
+                                            <li>Hercules Piano Bench</li>
+                                            <li>K & M 4 Legs Key Stand with extension</li>
+                                            <li>K & M Laptop / Small mixer stand</li>
+                                            <li>K & M Music Stand Lights</li>
+                                            <li>Meinl Bar Stool</li>
+                                            <li>Ultracase Tech Box</li>
+                                            <li>Unnown Flight Case Guitar Stand - 5 Way</li>
+                                            <li>Unnown Flight Case Guitar Stand - 7 Way</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">zamknij</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalEight">
+                            talerze
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalEight" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="modalEightLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modalEightLabel">talerze</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Athletic Baritone Sax Stand</li>
+                                            <li>Athletic Double Bass Stand</li>
+                                            <li>Athletic Key X-Type stands with extensions</li>
+                                            <li>Athletic Tenor Sax Stand</li>
+                                            <li>Athletic Trombone stand</li>
+                                            <li>Athletic Trumpet Stand</li>
+                                            <li>Clearsonic Plexi Drumshield 5 Pieces</li>
+                                            <li>Hercules Adjustable Key Stool</li>
+                                            <li>Hercules Guitar stand</li>
+                                            <li>Hercules Piano Bench</li>
+                                            <li>K & M 4 Legs Key Stand with extension</li>
+                                            <li>K & M Laptop / Small mixer stand</li>
+                                            <li>K & M Music Stand Lights</li>
+                                            <li>Meinl Bar Stool</li>
+                                            <li>Ultracase Tech Box</li>
+                                            <li>Unnown Flight Case Guitar Stand - 5 Way</li>
+                                            <li>Unnown Flight Case Guitar Stand - 7 Way</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">zamknij</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalNine">
+                            percussion
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalNine" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="modalNineLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modalNineLabel">percussion</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Athletic Baritone Sax Stand</li>
+                                            <li>Athletic Double Bass Stand</li>
+                                            <li>Athletic Key X-Type stands with extensions</li>
+                                            <li>Athletic Tenor Sax Stand</li>
+                                            <li>Athletic Trombone stand</li>
+                                            <li>Athletic Trumpet Stand</li>
+                                            <li>Clearsonic Plexi Drumshield 5 Pieces</li>
+                                            <li>Hercules Adjustable Key Stool</li>
+                                            <li>Hercules Guitar stand</li>
+                                            <li>Hercules Piano Bench</li>
+                                            <li>K & M 4 Legs Key Stand with extension</li>
+                                            <li>K & M Laptop / Small mixer stand</li>
+                                            <li>K & M Music Stand Lights</li>
+                                            <li>Meinl Bar Stool</li>
+                                            <li>Ultracase Tech Box</li>
+                                            <li>Unnown Flight Case Guitar Stand - 5 Way</li>
+                                            <li>Unnown Flight Case Guitar Stand - 7 Way</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">zamknij</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTen">
+                            i. klawiszowe
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalTen" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="modalTenLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="modalTenLabel">instrumenty klawiszowe</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul>
+                                            <li>Athletic Baritone Sax Stand</li>
+                                            <li>Athletic Double Bass Stand</li>
+                                            <li>Athletic Key X-Type stands with extensions</li>
+                                            <li>Athletic Tenor Sax Stand</li>
+                                            <li>Athletic Trombone stand</li>
+                                            <li>Athletic Trumpet Stand</li>
+                                            <li>Clearsonic Plexi Drumshield 5 Pieces</li>
+                                            <li>Hercules Adjustable Key Stool</li>
+                                            <li>Hercules Guitar stand</li>
+                                            <li>Hercules Piano Bench</li>
+                                            <li>K & M 4 Legs Key Stand with extension</li>
+                                            <li>K & M Laptop / Small mixer stand</li>
+                                            <li>K & M Music Stand Lights</li>
+                                            <li>Meinl Bar Stool</li>
+                                            <li>Ultracase Tech Box</li>
+                                            <li>Unnown Flight Case Guitar Stand - 5 Way</li>
+                                            <li>Unnown Flight Case Guitar Stand - 7 Way</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">zamknij</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--     <div class="container d-flex justify-content-center">
         <div class="content">
             <img class="img-music" src="./files/music.gif" alt="">
         </div>
-    </div>
-
-
-
+    </div> -->
     <!-- LANDING -->
     <!-- Rental -->
-    <section>
-        <div class="container">
-            <div class="content">
-                <div class="row">
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top" src="./files/7.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Electric Guitars</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Let's have a look</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top" src="./files/drums.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Drums</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Let's have a look</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top" src="./files/bass.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Bass Guitars</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Let's have a look</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top" src="./files/5.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Other</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Let's have a look</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-
 
     <div id="carouselExampleCaptions" class="carousel slide pt-5 pb-5 container" data-bs-ride="false">
-        <div class="carousel-indicators">
+        <div class="carousel-indicators" id="galeria">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
@@ -190,9 +590,24 @@
 
 
     <div class="container d-flex justify-content-center mt-5 mb-5">
-        <div class="content">
-            <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title"
-                data-bs-content="kontakt: budzik@jestemsuper.pl">Kontakt</button>
+        <div class="content text-center">
+            <h3 class="display-2 text-center fw-bold" id="#kontakt">
+                KONTAKT
+            </h3>
+            <p class="pt-5">Revolver Backline
+                Stage Team UK/Partnerul. Konwaliowa 7
+                03-142 Warsaw
+            </p>
+            <p class="pb-5"> 
+                <email>
+                    Iza@revolverbackline.pl
+                </email>
+                
+                greg@revolverbackline.pl
+
+                Office : Iza Świejkowska +48 512 016 522
+                Greg "Bud" Chudek UK +44 7544355273
+            </p>
         </div>
     </div>
 
