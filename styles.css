@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,9 +19,29 @@ a {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .welcome-msg {
+    padding-top: 40% !important;
+    width: 100% !important;
+    color: antiquewhite !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-title {
+    width: 100% !important;
+    font-size: 70px !important;
+  }
+}
 
 .welcome-text {
   width: 70% !important;
+}
+@media (max-width: 768px) {
+  .welcome-text {
+    width: 95% !important;
+    padding-top: 20px;
+  }
 }
 
 .landing {
@@ -52,16 +73,34 @@ a {
   }
 }
 
+@media (max-width: 768px) {
+  #onas {
+    padding-top: 70px;
+    text-align: justify;
+    font-size: 17px !important;
+  }
+}
+
 .gear {
   background-image: url("/files/images/back/3.png");
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   background-repeat: no-repeat;
-  height: 40vh;
+  height: 50vh;
 }
 @media (max-width: 768px) {
   .gear {
     background-image: url("/files/images/back/3m.png");
+    background-position: center;
+  }
+  .gear-title {
+    color: aliceblue;
+  }
+}
+
+@media (max-width: 768px) {
+  .modals {
+    height: auto;
   }
 }
 

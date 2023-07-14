@@ -1,70 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-family: 'Poppins', sans-serif;
 }
+
 a {
   text-decoration: none;
 }
+
 .welcome-msg {
   padding-top: 18% !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width:768px) {
+    padding-top: 40% !important;
+    width: 100% !important;
+    color: antiquewhite !important;
+  }
 }
+
+.welcome-title {
+  @media (max-width:768px) {
+    width: 100% !important;
+    font-size: 70px !important;
+  }
+}
+
 .welcome-text {
   width: 70% !important;
+
+  @media (max-width:768px) {
+    width: 95% !important;
+    padding-top: 20px;
+  }
 }
+
 .landing {
 
- background-image: url('/files/images/back/1.png');
+  background-image: url('/files/images/back/1.png');
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
   height: 100vh;
-  @media (max-width:768px){
+
+  @media (max-width:768px) {
     background-image: url('/files/images/back/1m.png');
+
     p {
       font-size: 1rem !important;
     }
   }
 }
+
 .about {
   background-image: url('/files/images/back/2.png');
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
   height: 100vh;
-  @media (max-width:768px){
+
+  @media (max-width:768px) {
     background-image: url('/files/images/back/2m.png');
   }
 }
+
+#onas {
+  @media (max-width:768px) {
+    padding-top: 70px;
+    text-align: justify;
+    font-size: 17px !important;
+  }
+}
+
 .gear {
   background-image: url('/files/images/back/3.png');
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   background-repeat: no-repeat;
-  height: 40vh;
-  @media (max-width:768px){
+  height: 50vh;
+
+  @media (max-width:768px) {
     background-image: url('/files/images/back/3m.png');
+    background-position: center;
+    &-title {
+      color: aliceblue;
+    }
   }
 }
+
+.modals {
+  @media (max-width:768px) {
+    height: auto;
+  }
+}
+
 .about-text {
   padding-top: 10%;
+
   p {
     background-color: rgba(0, 0, 0, 0.432);
     padding: 20px;
     border-radius: 15px;
   }
 }
+
 .img-music {
   max-width: 20%;
 }
-
