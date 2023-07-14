@@ -84,13 +84,14 @@ a {
 .gear {
   background-image: url('/files/images/back/3.png');
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 50vh;
+  height: 40vh;
 
   @media (max-width:768px) {
     background-image: url('/files/images/back/3m.png');
     background-position: center;
+    height: 50vh;
     &-title {
       color: aliceblue;
     }
